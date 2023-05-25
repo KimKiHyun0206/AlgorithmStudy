@@ -1,6 +1,6 @@
-package select;
+package bubble_sort;
 
-public class SelectMain {
+public class BubbleSort {
 
     private static int[] array = {10, 9, 5, 4, 3, 2, 1, 7, 6};
 
