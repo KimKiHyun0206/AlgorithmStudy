@@ -16,9 +16,11 @@ public class ShellSort {
         int temp;
 
         int gap = 1;
+
         while (gap <= array.length / 3) {
             gap = gap * 3 + 1;
         }
+
         while (gap > 0) {
             for (outer = gap; outer < array.length; outer++) {
                 temp = array[outer];
