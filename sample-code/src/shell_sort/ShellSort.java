@@ -3,6 +3,14 @@ package shell_sort;
 import java.util.Arrays;
 
 public class ShellSort {
+    public static void main(String[] args) {
+
+        int [] array = {33,10,2,4,20,35,12,3,71,54};
+        System.out.println("Before: " + Arrays.toString(array));
+        sort(array);
+        System.out.println("After:  " + Arrays.toString(array));
+
+    }
     public static void sort(int[] array) {
         int inner, outer;
         int temp;
@@ -24,14 +32,5 @@ public class ShellSort {
             }
             gap = (gap - 1) / 3;
         }
-    }
-
-    public static void main(String[] args) {
-
-        int [] array = {33,10,2,4,20,35,12,3,71,54};
-        System.out.println("Before: " + Arrays.toString(array));
-        sort(array);
-        System.out.println("After:  " + Arrays.toString(array));
-
     }
 }
