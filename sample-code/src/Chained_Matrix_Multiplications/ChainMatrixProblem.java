@@ -42,6 +42,6 @@ public class ChainMatrixProblem {
             System.out.println(Arrays.toString(dp[i]));
         }
 
-        System.out.println(dp[1][numberOfMatrix]);
+        System.out.println("[ Answer ] "+dp[1][numberOfMatrix]);
     }
 }
