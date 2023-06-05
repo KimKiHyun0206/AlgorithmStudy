@@ -32,11 +32,11 @@ public class BellmanFordAlgorithm {
         }
 
         //벨만-포드 알고리즘 수행
-        BellmanFord(n, m, 4);
+        doBellmanFord(n, m, 4);
     }
 
     //정점의 개수, 간선의 개수, 출발지
-    public static boolean BellmanFord(int n, int m, int start) {
+    public static void doBellmanFord(int n, int m, int start) {
         int[] dist = new int[n + 1];
         Arrays.fill(dist, INF);
         dist[start] = 0;
@@ -61,7 +61,7 @@ public class BellmanFordAlgorithm {
             //현재 간선의 들어오는 정점에 대해 비교 -> 더 작은 값 생기면 음수 사이클 존재
             if (dist[edge.v] != INF && dist[edge.w] > dist[edge.v] + edge.cost) {
                 System.out.println("음수 사이클 존재");
-                return false;
+                return;
             }
         }
 
@@ -72,7 +72,5 @@ public class BellmanFordAlgorithm {
             else
                 System.out.print(dist[i] + " ");
         }
-
-        return true;
     }
 }
