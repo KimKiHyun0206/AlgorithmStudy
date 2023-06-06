@@ -1,4 +1,4 @@
-package BellmanFord;
+package 벨만포드알고리즘;
 
 class Edge {
     int v; // 나가는 정점

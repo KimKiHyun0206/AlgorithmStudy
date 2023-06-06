@@ -1,4 +1,4 @@
-package Floyd;
+package 플로이드알고리즘;
 
 public class FloydAlgorithm {
 

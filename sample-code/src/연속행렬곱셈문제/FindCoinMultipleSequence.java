@@ -1,4 +1,4 @@
-package Chained_Matrix_Multiplications;
+package 연속행렬곱셈문제;
 
 import java.util.*;
 

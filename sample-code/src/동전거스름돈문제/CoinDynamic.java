@@ -1,4 +1,4 @@
-package coin;
+package 동전거스름돈문제;
 
 import java.util.Scanner;
 
