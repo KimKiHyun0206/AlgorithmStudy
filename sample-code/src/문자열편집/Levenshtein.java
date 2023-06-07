@@ -7,7 +7,7 @@ public class Levenshtein {
         Scanner scanner = new Scanner(System.in);
         String str1 = scanner.nextLine();
         String str2 = scanner.nextLine();
-        new Levenshtein().runAlgorithm(str1, str2);
+        new Levenshtein().runAlgorithm(" " + str1, " " + str2);
     }
 
     public int getMinimum(int val1, int val2, int val3) {
@@ -23,11 +23,11 @@ public class Levenshtein {
 
         int[][] d = new int[m + 1][n + 1];
 
-        for (int i = 0; i < m; i++) {
+        for (int i = 1; i < m + 1; i++) {
             d[i][0] = i;
         }
 
-        for (int j = 0; j < n; j++) {
+        for (int j = 1; j < n + 1; j++) {
             d[0][j] = j;
         }
 
